@@ -1,0 +1,87 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+    "xgvmName": {
+      "value": "lbwesteurxg1"
+    },
+    "dcvmName": {
+      "value": "lbwesteurdc1"
+    },
+    "webvmName": {
+      "value": "lbwesteurweb1"
+    },
+    "adminName": {
+      "value": "azureadmin"
+    },
+    "adminPassword": {
+      "value": "Jonah123Green"
+    },
+    "xgvmSize": {
+      "value": "Standard_D3"
+    },
+    "dcvmSize": {
+      "value": "Standard_A3"
+    },
+    "webvmSize": {
+      "value": "Standard_A3"
+    },
+    "netName": {
+      "value": "lbazurewesteurvnet"
+    },
+    "netPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "wanName": {
+      "value": "lbazurewesteurvnetwan"
+    },
+    "wanPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "lanName": {
+      "value": "lbazurewesteurvnetlan"
+    },
+    "lanPrefix": {
+      "value": "10.0.2.0/24"
+    },
+    "xgStaticIP": {
+      "value": "10.0.2.10"
+    },
+    "storageName": {
+      "value": "lbazurewesteurstore"
+    },
+    "xgpublicIpName": {
+      "value": "lbazurewesteurxgwanpip"
+    },
+    "storageType": {
+      "value": "Standard_LRS"
+    },
+    "xgimageSku": {
+      "value": "byol"
+    },
+    "dcimageSku": {
+      "value": "Windows-Server-Technical-Preview"
+    },
+    "webimageSku": {
+      "value": "Windows-Server-Technical-Preview"
+    },
+    "xgpublicIpDNS": {
+      "value": "lbwesteurazurexg1"
+    },
+    "xgnicWanName": {
+      "value": "lbazurewesteurxgwanport"
+    },
+    "xgnicLanName": {
+      "value": "lbazurewesteurxglanport"
+    },
+    "dcvmnicName": {
+      "value": "lbazuredc1lanport"
+    },
+    "webvmnicName": {
+      "value": "lbazureweb1lanport"
+    },
+    "xgwannsgName": {
+      "value": "lbazurewesteurxgwannsg"
+    }
+  }
+}
